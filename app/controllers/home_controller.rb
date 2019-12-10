@@ -17,4 +17,14 @@ class HomeController < ApplicationController
     end
   end
 
+  def students
+    @students = Student.order(:name).all.limit(50)
+    StudentsMailer.students_record(@students).deliver
+    flash[:notice] = "Mail has been sent successfully"
+  end
+
+  def about
+
+  end
+
 end
