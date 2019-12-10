@@ -10,4 +10,11 @@ class HomeController < ApplicationController
     end
   end
 
+  def export_employees
+    @employees = Employee.order(:name).all.limit(50)
+    respond_to do |format|
+      format.pdf { send_data @employees.to_pdf }
+    end
+  end
+
 end
