@@ -1,0 +1,18 @@
+.field_with_errors {
+  display: inline;
+}
+
+.field_with_errors .message {
+  color: #D00;
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+}
+
+.pic {
+  width: 100%;
+}

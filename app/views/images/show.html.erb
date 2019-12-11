@@ -1,0 +1,17 @@
+<h1>Showing the selected image</h1>
+
+<p>
+  <strong>Name:</strong><br />
+  <%= @image.name %>
+</p>
+<p>
+  <strong>Image:</strong><br />
+  <div class = "image">
+    <%= image_tag(@image.picture, class: "pic") %>
+  </div>
+</p>
+<p>
+  <strong>Caption:</strong><br />
+  <%= @image.caption %>
+</p>
+<%= link_to "Back to Listing Images", images_path %>

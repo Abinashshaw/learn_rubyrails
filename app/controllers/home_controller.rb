@@ -22,9 +22,4 @@ class HomeController < ApplicationController
     StudentsMailer.students_record(@students).deliver
     flash[:notice] = "Mail has been sent successfully"
   end
-
-  def about
-
-  end
-
 end
