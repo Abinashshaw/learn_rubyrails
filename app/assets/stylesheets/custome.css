@@ -16,3 +16,20 @@
 .pic {
   width: 100%;
 }
+
+.primary, .success {
+  text-decoration: none;
+}
+
+.primary {
+  color: blue;
+}
+
+.success {
+  color: green;
+}
+
+.danger {
+  color: red;
+}
+

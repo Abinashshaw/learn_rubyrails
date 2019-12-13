@@ -1,0 +1,11 @@
+<h1>Showing the selected customer</h1>
+
+<p>
+  <strong>Name:</strong>
+  <%= @customer.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @customer.email %>
+</p>
+[ <%= link_to "Back to listing customers", customers_path %> ]
