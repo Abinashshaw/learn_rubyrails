@@ -1,4 +1,5 @@
 <h1>Listing all images</h1>
+<%= link_to "Go to home page", root_path %>
 <p>
   <%= link_to "create new image", new_image_path %>
 </p>
@@ -12,6 +13,12 @@ click image_name to show image
     <tr>
       <td><%= link_to  image.name, image_path(image) %></td>
       <td><%= image.caption %></td>
+      <td><button><%= link_to("Edit", edit_image_path(image), class: "primary") %></button> | </td>
+      <td><%= button_to("Destroy", image_path(image),
+                                 remote: true,
+                                 method: :delete,
+                                 data: { confirm: "Are you sure?" }, class: "danger") %>
+      </td>
     </tr>
   <% end %>
 </table>
