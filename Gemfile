@@ -4,10 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 gem 'prawn' #This is useful for pdf
 
-#for Client Side Validation
-gem 'jquery-rails'
-gem 'client_side_validations'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.1'
 # Use Puma as the app server
