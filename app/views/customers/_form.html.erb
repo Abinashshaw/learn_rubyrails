@@ -1,3 +1,4 @@
+<%= render 'shared/errors', obj: @customer %>
 <%= form_for @customer, validate: true do |f| %>
   <%= f.label :name %><br />
   <%= f.text_field :name, required: true %>
